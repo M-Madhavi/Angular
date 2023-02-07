@@ -1,0 +1,17 @@
+<h2>Books List</h2>
+<!-- <button [disabled]="isDisabled" (click)="handleClick()">Show Books</button>
+<input type="text" [(ngModel)] ="enteredInput"/>
+<div>{{enteredInput}}</div> -->
+<!-- <button (click)="isShowing=!isShowing">
+    <ng-container *ngIf="!isShowing">Show Books</ng-container>
+    <ng-container *ngIf="isShowing">Hide Books</ng-container>
+
+</button> -->
+<ul *ngIf="isShowing">
+
+  <ng-container *ngFor="let singlebook of books;let i=index">
+    <app-book (bookEmitter)="addToCart($event)" [book]="singlebook"></app-book>
+  </ng-container>
+
+
+</ul>

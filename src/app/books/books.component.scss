@@ -1,0 +1,13 @@
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.listClass{
+      list-style: none;
+    // width: 200px;
+    text-overflow: ellipsis;
+    margin: 2px;
+    text-align: center;
+    cursor: pointer;
+  
+}
