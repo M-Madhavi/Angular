@@ -9,8 +9,10 @@
 </button> -->
 <ul *ngIf="isShowing">
 
-  <ng-container *ngFor="let singlebook of books;let i=index">
-    <app-book (bookEmitter)="addToCart($event)" [book]="singlebook"></app-book>
+  <ng-container *ngFor ="let singlebook of books;let i=index">
+    <!-- <app-book (bookEmitter)="addToCart($event)" [book]="singlebook"></app-book> -->
+    <app-book  [book]="singlebook"></app-book>
+
   </ng-container>
 
 
